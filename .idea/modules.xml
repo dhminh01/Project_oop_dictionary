@@ -7,8 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/java/dictionary/dictionary.iml" filepath="$PROJECT_DIR$/java/dictionary/dictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/resources/icon/icon.iml" filepath="$PROJECT_DIR$/resources/icon/icon.iml" />
       <module fileurl="file://$PROJECT_DIR$/resources/image/image.iml" filepath="$PROJECT_DIR$/resources/image/image.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/java.iml" filepath="$PROJECT_DIR$/java/java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/resources/resources.iml" filepath="$PROJECT_DIR$/resources/resources.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/dictionary/server/server.iml" filepath="$PROJECT_DIR$/java/dictionary/server/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/dictionary/ui/ui.iml" filepath="$PROJECT_DIR$/java/dictionary/ui/ui.iml" />
     </modules>
