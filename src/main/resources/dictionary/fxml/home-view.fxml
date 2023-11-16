@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="homeViewPane" prefHeight="600.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.myevdictionary.controller.HomeViewController">
+   <children>
+      <VBox fx:id="vboxHome" prefHeight="600.0" prefWidth="820.0">
+         <children>
+            <HBox fx:id="search" prefHeight="70.0" prefWidth="820.0">
+               <children>
+                  <TextField fx:id="searchbar" layoutY="10.0" prefWidth="600.0">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="70.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="searchbtn" mnemonicParsing="false" onMouseClicked="#searching" text="Search">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="content" prefHeight="530.0" prefWidth="820.0">
+               <children>
+                  <ListView fx:id="listView" prefHeight="530.0" prefWidth="300.0" />
+                  <WebView fx:id="definitionView" prefHeight="530.0" prefWidth="520.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

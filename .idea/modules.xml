@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Project_oop_dictionary.iml" filepath="$PROJECT_DIR$/.idea/Project_oop_dictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/resources/database/database.iml" filepath="$PROJECT_DIR$/resources/database/database.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/dictionary/dictionary.iml" filepath="$PROJECT_DIR$/java/dictionary/dictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/resources/icon/icon.iml" filepath="$PROJECT_DIR$/resources/icon/icon.iml" />

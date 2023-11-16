@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.myevdictionary.controller.MainController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="900.0">
+         <left>
+            <VBox fx:id="navBar" prefHeight="600.0" prefWidth="80.0" styleClass="vbox" stylesheets="@../css/mainstyles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="homebtn" mnemonicParsing="false" onAction="#pressedHome" prefHeight="80.0" prefWidth="80.0" text="Home" textFill="WHITE" />
+                  <Button fx:id="userbtn" mnemonicParsing="false" onMouseClicked="#pressedUser" prefHeight="80.0" prefWidth="80.0" text="User" textFill="WHITE" />
+                  <Button fx:id="informationbtn" mnemonicParsing="false" onMouseClicked="#pressedInformation" prefHeight="80.0" prefWidth="80.0" text="Information" textFill="WHITE" />
+                  <Button fx:id="settingbtn" mnemonicParsing="false" onMouseClicked="#pressedSetting" prefHeight="80.0" prefWidth="80.0" text="Setting" textFill="WHITE" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

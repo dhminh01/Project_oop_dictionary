@@ -1,4 +1,4 @@
 package dictionary.ui.controller;
 
-public class AddWord {
+public class SettingViewController {
 }
