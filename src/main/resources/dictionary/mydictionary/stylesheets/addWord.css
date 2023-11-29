@@ -1,0 +1,90 @@
+/* Radio Button */
+
+* {
+    -button-color: #747f8d;
+    -hover-button-color: #2e3338;
+
+    -purple-color: #5865F2;
+    -hover-purple-color: #4752C4;
+
+    -text-color: #555c5d;
+    -hover-text-color: #2e3338;
+
+    -gray-color: #e6e6e6;
+    -title-color: #060607;
+    -hover-background-color: #D4D7DC;
+}
+
+.radio-button {
+    -fx-text-fill: -text-color;
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+}
+
+.radio-button:hover {
+    -fx-text-fill: -hover-text-color;
+    -fx-cursor: hand;
+}
+
+.radio-button:selected {
+    -fx-text-fill: -hover-text-color;
+}
+
+.radio-button .radio {
+    -fx-border-width: 2px;
+    -fx-border-color: -button-color;
+    -fx-background-color: white;
+    -fx-border-radius: 15px;
+    -fx-padding: 3px;
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: -hover-button-color;
+}
+
+.radio-button:selected .radio {
+    -fx-border-color: -hover-button-color;
+}
+
+.radio-button .dot {
+    -fx-background-radius: 15px;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: -purple-color;
+    -fx-background-insets: 0;
+}
+
+/* Button */
+.button {
+    -fx-pref-height: 35;
+    -fx-pref-width: 35;
+    -fx-padding: 0;
+}
+
+.button-arrow {
+    -fx-background-image: url('../icons/arrow.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 15;
+    -fx-background-color: -purple-color;
+    -fx-background-radius: 0 3 3 0;
+    -fx-pref-width: 34;
+    -fx-pref-height: 34;
+}
+
+.button-save {
+    -fx-graphic: url('../icons/save.png');
+}
+
+.button-reset {
+    -fx-graphic: url('../icons/reset.png');
+}
+
+/* Text */
+
+.text-label {
+    -fx-text-fill: -title-color;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}

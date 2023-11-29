@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.HTMLEditor?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="600.0" prefWidth="820.0" stylesheets="@../stylesheets/addWord.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.mydictionary.controller.AddWordController">
+   <children>
+      <Label layoutX="116.0" layoutY="30.0" styleClass="text-label" text="Từ điển" />
+      <RadioButton fx:id="addEV" layoutX="116.0" layoutY="71.0" mnemonicParsing="false" text="Anh - Việt">
+         <toggleGroup>
+            <ToggleGroup fx:id="data1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="addVE" layoutX="257.0" layoutY="71.0" mnemonicParsing="false" text="Việt - Anh" toggleGroup="$data1" />
+      <Label layoutX="460.0" layoutY="25.0" prefHeight="25.0" prefWidth="66.0" styleClass="text-label" text="Từ vựng" />
+      <TextField fx:id="addText" layoutX="460.0" layoutY="59.0" prefHeight="35.0" prefWidth="187.0" />
+      <Button ellipsisString="" layoutX="646.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleClickArrow" prefHeight="35.0" styleClass="button-arrow" />
+      <HBox alignment="CENTER_RIGHT" layoutX="561.0" layoutY="124.0" prefHeight="39.0" prefWidth="170.0">
+         <children>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#add" prefHeight="39.0" prefWidth="54.0" styleClass="button-save" textFill="#4d99f5">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#addReset" prefHeight="58.0" prefWidth="57.0" styleClass="button-reset" textFill="#8e9297">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="70.0" layoutY="177.0" prefHeight="338.0" prefWidth="679.0">
+         <children>
+            <WebView layoutX="-1.0" layoutY="-1.0" prefHeight="338.0" prefWidth="679.0" />
+            <HTMLEditor fx:id="addEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="-1.0" prefHeight="338.0" prefWidth="679.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

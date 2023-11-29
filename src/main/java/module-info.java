@@ -1,9 +1,12 @@
-module Project.oop.dictionary {
+module dictionary.mydictionary {
     requires javafx.controls;
-    requires javafx.graphics;
     requires javafx.fxml;
-    requires javafx.web;
     requires jlayer;
+    requires javafx.web;
 
-    opens dictionary;
+    exports dictionary.mydictionary.controller;
+    opens dictionary.mydictionary.controller to javafx.fxml;
+
+    opens dictionary.mydictionary to javafx.fxml;
+    exports dictionary.mydictionary;
 }

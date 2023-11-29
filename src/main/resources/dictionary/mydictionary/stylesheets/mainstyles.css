@@ -1,0 +1,19 @@
+.vbox {
+    -fx-background-color: #1E1E1E;
+}
+
+.button {
+    -fx-background-color: #323232;
+}
+
+.button:hover {
+    -fx-background-color: #2868D9;
+}
+
+.button:pressed {
+    -fx-background-color: #1F52AB;
+}
+
+.button:focused {
+    -fx-background-color: #255FC7;
+}

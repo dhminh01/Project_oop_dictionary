@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.mydictionary.controller.MainController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="900.0">
+         <left>
+            <VBox fx:id="navBar" prefHeight="600.0" prefWidth="80.0" styleClass="vbox" stylesheets="@../stylesheets/mainstyles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="homebtn" mnemonicParsing="false" onAction="#pressedSearch" prefHeight="80.0" prefWidth="80.0" text="Home" textFill="WHITE" />
+                  <Button fx:id="googlebtn" mnemonicParsing="false" onMouseClicked="#pressedGoogle" prefHeight="80.0" prefWidth="80.0" text="Google" textFill="WHITE" />
+                  <Button fx:id="bookmarkbtn" mnemonicParsing="false" onMouseClicked="#pressedBookmark" prefHeight="80.0" prefWidth="80.0" text="Bookmark" textFill="WHITE" />
+                  <Button fx:id="historybtn" mnemonicParsing="false" onMouseClicked="#pressedHistory" prefHeight="80.0" prefWidth="80.0" text="History" textFill="WHITE" />
+                  <Button fx:id="addWordbtn" mnemonicParsing="false" onMouseClicked="#pressedAddWord" prefHeight="80.0" prefWidth="80.0" text="Add Word" textFill="WHITE" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

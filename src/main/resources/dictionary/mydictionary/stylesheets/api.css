@@ -1,0 +1,19 @@
+.button-speaker{
+    -fx-background-image: url('../icons/speak.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.button-lang {
+    -fx-min-width: 90;
+    -fx-padding: 5;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-border-color: #cccccc;
+}
+
+.button-trans{
+    -fx-background-image: url('../icons/translate.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
